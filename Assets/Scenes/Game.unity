@@ -3286,14 +3286,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 470ca21ab2fa4b84841c0f20c0981719, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _carFactory: {fileID: 11400000, guid: dbc68b6d76c57c4408e1bd852b28e805, type: 2}
-  _playerFactory: {fileID: 11400000, guid: 9d8c3ff946be4e46b489e9a731a36c42, type: 2}
-  _aiIdContext: Ai
-  _threshold: 5
-  _config: {fileID: 11400000, guid: f50f7111cfa742059858d36620bdb8e2, type: 2}
-  _updates: {fileID: 748432474}
-  _playerId: Player
-  _carConfig: {fileID: 11400000, guid: 51001e3dd666e684d8df7ad6d58d2ee7, type: 2}
 --- !u!4 &748432476
 Transform:
   m_ObjectHideFlags: 0
@@ -6013,6 +6005,7 @@ GameObject:
   - component: {fileID: 1212959268}
   - component: {fileID: 1212959267}
   - component: {fileID: 1212959266}
+  - component: {fileID: 1212959270}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -6043,8 +6036,8 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
+  m_RenderPostProcessing: 1
+  m_Antialiasing: 3
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
@@ -6131,13 +6124,30 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212959265}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 112.005936, y: 10.397895, z: -117.206314}
+  m_LocalRotation: {x: 0, y: -0.72537434, z: 0, w: 0.6883546}
+  m_LocalPosition: {x: 31, y: 7.4, z: -22.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -93, z: 0}
+--- !u!114 &1212959270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212959265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 618b0e3f6c65dd247a4a016150006c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LookSpeedController: 120
+  m_LookSpeedMouse: 4
+  m_MoveSpeed: 10
+  m_MoveSpeedIncrement: 2.5
+  m_Turbo: 10
 --- !u!1001 &1254049562
 PrefabInstance:
   m_ObjectHideFlags: 0
