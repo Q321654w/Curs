@@ -5,12 +5,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 716725928997077842, guid: 511a5348c1767a546ae0db3f365bc354, type: 3}
       propertyPath: _wheelMarkers.Array.size
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 716725928997077842, guid: 511a5348c1767a546ae0db3f365bc354, type: 3}
+      propertyPath: _wheelMarkers.Array.data[0]
+      value: 
+      objectReference: {fileID: 7924213316038238072}
     - target: {fileID: 716725928997077842, guid: 511a5348c1767a546ae0db3f365bc354, type: 3}
       propertyPath: _wheelMarkers.Array.data[4]
       value: 
@@ -72,4 +77,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 511a5348c1767a546ae0db3f365bc354, type: 3}
+--- !u!114 &7924213316038238072 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9019244795897683924, guid: 511a5348c1767a546ae0db3f365bc354, type: 3}
+  m_PrefabInstance: {fileID: 1212239460253860012}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af35601d7eef430eb662753d117dcc58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

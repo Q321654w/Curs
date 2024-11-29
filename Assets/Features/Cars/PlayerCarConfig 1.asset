@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 631abcca5f3643c1af8be816c505fbc4, type: 3}
-  m_Name: New Levels
+  m_Script: {fileID: 11500000, guid: daf0bc63c6374ec28c474b9bb561b98e, type: 3}
+  m_Name: PlayerCarConfig 1
   m_EditorClassIdentifier: 
-  _allConfigs:
-  - {fileID: 11400000, guid: d7a02a3d6b37153499645dd8b2cd4d66, type: 2}
-  - {fileID: 11400000, guid: f50f7111cfa742059858d36620bdb8e2, type: 2}
+  _carPrefab: {fileID: 2447135102854956759, guid: 33bc40e480d2ea94680171a7710c1c50, type: 3}
+  _id: 2
+  _engineId: 2

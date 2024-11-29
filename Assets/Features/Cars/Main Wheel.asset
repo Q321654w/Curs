@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 631abcca5f3643c1af8be816c505fbc4, type: 3}
-  m_Name: New Levels
+  m_Script: {fileID: 11500000, guid: 7044b17e52644e57a743583d94c85699, type: 3}
+  m_Name: Main Wheel
   m_EditorClassIdentifier: 
-  _allConfigs:
-  - {fileID: 11400000, guid: d7a02a3d6b37153499645dd8b2cd4d66, type: 2}
-  - {fileID: 11400000, guid: f50f7111cfa742059858d36620bdb8e2, type: 2}
+  _id: 10
+  _pair: {fileID: 11400000, guid: 990d8d359e43e7e439cc632210c715c4, type: 2}
+  _colliderPrefab: {fileID: 3725085281232933370, guid: 445ee778771a5ea41bd8f17d4302825e, type: 3}

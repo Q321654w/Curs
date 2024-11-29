@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4da4b4fa84d4cb3b36da0d1dda8127e, type: 3}
+  m_Name: New Level Config 1
+  m_EditorClassIdentifier: 
+  _driverIds:
+  - Ai
+  - Ai
+  - Ai
+  _mapPrefab: {fileID: 5435340432792137638, guid: 643c3186a4a4a1e4b913e0d9a0487d18, type: 3}
+  _loops: 1
+  _playerConfig: {fileID: 11400000, guid: 29d1edb5bb057014d9b7d69e3bdd5a37, type: 2}

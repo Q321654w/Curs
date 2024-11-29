@@ -8,7 +8,7 @@ using UnityEngine;
 namespace Features.Cars
 {
     [RequireComponent(typeof(Rigidbody))]
-    [RequireComponent(typeof(MeshCollider))]
+    [RequireComponent(typeof(Collider))]
     public class Car : MonoBehaviour, IGameUpdate
     {
         [SerializeField] private WheelMarker[] _wheelMarkers;

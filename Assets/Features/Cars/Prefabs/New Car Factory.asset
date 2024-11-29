@@ -15,5 +15,6 @@ MonoBehaviour:
   _configs:
   - {fileID: 11400000, guid: c84f1ac7a4fa9d143b292a1059fb9a0f, type: 2}
   - {fileID: 11400000, guid: 51001e3dd666e684d8df7ad6d58d2ee7, type: 2}
+  - {fileID: 11400000, guid: 29d1edb5bb057014d9b7d69e3bdd5a37, type: 2}
   _engineFactory: {fileID: 11400000, guid: 5bee4724cb0c4990ab45ca6b59219fa3, type: 2}
   _wheelFactory: {fileID: 11400000, guid: 8f4b64fa982d2fd4cacaca2b70212949, type: 2}
