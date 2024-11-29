@@ -26,13 +26,13 @@ namespace Features.Cars.Engines
         public void Accelerate()
         {
             var acceleration = _stats.AccelerationSpeed;
-            _speed = Mathf.Clamp(_speed + acceleration, -_stats.MaxSpeed, _stats.MaxSpeed);
+            _speed = Mathf.Clamp(_speed + acceleration, 0, _stats.MaxSpeed);
         }
 
         public void Slowdown()
         {
             var acceleration = _stats.BrakingSpeed;
-            _speed = Mathf.Clamp(_speed - acceleration, -_stats.MaxSpeed, _stats.MaxSpeed);
+            _speed = Mathf.Clamp(_speed - acceleration, 0, _stats.MaxSpeed);
         }
 
         public void Move(float deltaTime)

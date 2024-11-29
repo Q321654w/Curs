@@ -17,7 +17,7 @@ namespace Features
 
         protected override float GetXDirection()
         {
-            var horizontalDirection = Input.GetAxisRaw("Horizontal");
+            var horizontalDirection = (Input.GetKeyDown(KeyCode.D) ? 1f : 0f) + (Input.GetKeyDown(KeyCode.A) ? -1f : 0f);
 
             if (horizontalDirection == 0)
                 return CorectionAngle();
@@ -39,7 +39,7 @@ namespace Features
 
         protected override float GetZDirection()
         {
-            return Input.GetAxisRaw("Vertical");
+            return Input.GetKeyDown(KeyCode.W) ? 1f : 0f;
         }
     }
 }

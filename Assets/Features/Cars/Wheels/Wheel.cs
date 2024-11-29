@@ -32,6 +32,7 @@ namespace DefaultNamespace.Features
 
         public void SetTorque(float smoothedForce)
         {
+            Debug.Log(smoothedForce);
             _meshSynchronizer.WheelCollider.motorTorque = smoothedForce;
         }
 
