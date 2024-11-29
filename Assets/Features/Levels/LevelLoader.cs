@@ -64,7 +64,8 @@ namespace Features
             map.PlayerMarker.MoveToMe(playerCar.transform);
 
             _camera.transform.SetParent(playerCar.transform);
-            _camera.transform.localPosition = new Vector3(0, 2, -5);
+            _camera.transform.localPosition = new Vector3(0, 7, -10);
+            _camera.transform.localRotation = Quaternion.identity;
 
             return playerCar;
         }

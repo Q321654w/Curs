@@ -153,8 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerMarker: {fileID: 300352548424470210}
-  _botMarkers:
-  - {fileID: 3643573168253853566}
+  _botMarkers: []
   _pathCreator: {fileID: 1512077878525524954}
   _finish: {fileID: 7330293096389718526}
 --- !u!114 &1512077878525524954
@@ -203,7 +202,7 @@ MonoBehaviour:
       - 0
       globalNormalsAngle: 0
       flipNormals: 0
-    vertexPathUpToDate: 1
+    vertexPathUpToDate: 0
     vertexPathMaxAngleError: 10
     vertexPathMinVertexSpacing: 1
     showTransformTool: 1

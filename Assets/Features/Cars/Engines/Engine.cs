@@ -26,17 +26,19 @@ namespace Features.Cars.Engines
         public void Accelerate()
         {
             var acceleration = _stats.AccelerationSpeed;
-            _speed = Mathf.Clamp(_speed + acceleration, 0, _stats.MaxSpeed);
+            _speed = Mathf.Clamp(_speed + acceleration, -_stats.MaxSpeed, _stats.MaxSpeed);
         }
 
         public void Slowdown()
         {
             var acceleration = _stats.BrakingSpeed;
-            _speed = Mathf.Clamp(_speed - acceleration, 0, _stats.MaxSpeed);
+            _speed = Mathf.Clamp(_speed - acceleration, -_stats.MaxSpeed, _stats.MaxSpeed);
         }
 
         public void Move(float deltaTime)
         {
+            Debug.Log($"Move, speed: {_speed}");
+
             var force = _speed;
             var smoothedForce = force * deltaTime;
 
@@ -48,7 +50,7 @@ namespace Features.Cars.Engines
 
         public void Rotate(float deltaAngle)
         {
-            var clampedAngle = Mathf.Clamp(deltaAngle, -_stats.TurningSpeed, _stats.TurningSpeed);
+            var clampedAngle = deltaAngle * _stats.TurningSpeed;
 
             foreach (var wheel in _rotateWheels)
             {

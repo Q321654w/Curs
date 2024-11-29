@@ -8,7 +8,6 @@ namespace Features
     public class Player : Driver
     {
         private readonly Wheel _wheel;
-        private const float MAX_ANGLE = 90;
 
         public Player(Car car) : base(car)
         {
@@ -17,16 +16,17 @@ namespace Features
 
         protected override float GetXDirection()
         {
-            var horizontalDirection = (Input.GetKeyDown(KeyCode.D) ? 1f : 0f) + (Input.GetKeyDown(KeyCode.A) ? -1f : 0f);
+            var horizontalDirection = (Input.GetKey(KeyCode.D) ? 1f : 0f) + (Input.GetKey(KeyCode.A) ? -1f : 0f);
 
             if (horizontalDirection == 0)
                 return CorectionAngle();
             
-            return horizontalDirection * MAX_ANGLE;
+            return horizontalDirection;
         }
 
         private float CorectionAngle()
         {
+            Debug.Log("Correcting");
             var transform = Car.transform;
 
             var steerAngleInRadians = _wheel.Angle * Mathf.Deg2Rad;
@@ -39,7 +39,7 @@ namespace Features
 
         protected override float GetZDirection()
         {
-            return Input.GetKeyDown(KeyCode.W) ? 1f : 0f;
+            return (Input.GetKey(KeyCode.W) ? 1f : 0f) + (Input.GetKey(KeyCode.S) ? -1f : 0f);
         }
     }
 }

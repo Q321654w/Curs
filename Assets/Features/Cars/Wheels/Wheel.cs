@@ -28,6 +28,7 @@ namespace DefaultNamespace.Features
             var steeringAngle = _meshSynchronizer.WheelCollider.steerAngle;
             steeringAngle += angle;
             _meshSynchronizer.WheelCollider.steerAngle = Mathf.Clamp(steeringAngle, -_maxRotationAngle, _maxRotationAngle);
+            Debug.Log(_meshSynchronizer.WheelCollider.steerAngle);
         }
 
         public void SetTorque(float smoothedForce)

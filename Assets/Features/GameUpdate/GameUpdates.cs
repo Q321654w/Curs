@@ -26,14 +26,14 @@ namespace Features.GameUpdate
             _updates.RemoveAt(lastIndex);
         }
 
-        private void FixedUpdate()
+        private void Update()
         {
             if (_isStopped) 
                 return;
 
             for (var i = 0; i < _updates.Count; i++)
             {
-                _updates[i].GameUpdate(Time.fixedDeltaTime);
+                _updates[i].GameUpdate(Time.deltaTime);
             }
         }
 
