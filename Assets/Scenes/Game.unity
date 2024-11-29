@@ -96,7 +96,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 320473f2d4c9f18438cf77ca686ac163, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 3347f58b78a010b4384dcd17fcbef35c, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -4199,7 +4199,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 332430787446437681, guid: d7c9b08657eabc54db441e4854d7996e, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2877689784620721263, guid: d7c9b08657eabc54db441e4854d7996e, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4207,7 +4207,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4902700261737703990, guid: d7c9b08657eabc54db441e4854d7996e, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5758661514166368310, guid: d7c9b08657eabc54db441e4854d7996e, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4215,7 +4215,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6008086538093168497, guid: d7c9b08657eabc54db441e4854d7996e, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6418855439611732068, guid: d7c9b08657eabc54db441e4854d7996e, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4275,7 +4275,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8882382852926300921, guid: d7c9b08657eabc54db441e4854d7996e, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8924,6 +8924,14 @@ PrefabInstance:
     - target: {fileID: 5429801794782812644, guid: 0272d5b08108c7543b70c3ccbcd7249c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6187388775334528062, guid: 0272d5b08108c7543b70c3ccbcd7249c, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6187388775334528062, guid: 0272d5b08108c7543b70c3ccbcd7249c, type: 3}
+      propertyPath: m_StitchLightmapSeams
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7136163183877424819, guid: 0272d5b08108c7543b70c3ccbcd7249c, type: 3}
       propertyPath: m_StaticEditorFlags
