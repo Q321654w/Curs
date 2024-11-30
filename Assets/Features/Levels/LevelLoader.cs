@@ -26,7 +26,7 @@ namespace Features
 
         public Level Load(LevelConfig config)
         {
-            var map = _mapBuilder.Build(config.MapPrefab);
+            var map = _mapBuilder.Build();
 
             var drivers = CreateBots(map,config.DriverIds);
 

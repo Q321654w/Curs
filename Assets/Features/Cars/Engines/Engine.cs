@@ -25,26 +25,21 @@ namespace Features.Cars.Engines
 
         public void Accelerate()
         {
-            var acceleration = _stats.AccelerationSpeed;
-            _speed = Mathf.Clamp(_speed + acceleration, -_stats.MaxSpeed, _stats.MaxSpeed);
+            _speed += _stats.AccelerationSpeed;
         }
 
         public void Slowdown()
         {
-            var acceleration = _stats.BrakingSpeed;
-            _speed = Mathf.Clamp(_speed - acceleration, -_stats.MaxSpeed, _stats.MaxSpeed);
+            _speed -= _stats.BrakingSpeed;
         }
 
         public void Move(float deltaTime)
         {
             Debug.Log($"Move, speed: {_speed}");
 
-            var force = _speed;
-            var smoothedForce = force * deltaTime;
-
             foreach (var wheel in _tractionWheels)
             {
-                wheel.SetTorque(smoothedForce);
+                wheel.SetTorque(_speed);
             }
         }
 

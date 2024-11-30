@@ -17,8 +17,8 @@ MonoBehaviour:
     _ki: 0
     _kd: 0
   _stats:
-    _accelerationSpeed: 500
-    _brakingSpeed: 500
+    _accelerationSpeed: 10000
+    _brakingSpeed: 10000
     _turningSpeed: 30
     _maxSpeed: 10000
   _id: 2

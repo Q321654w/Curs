@@ -8,9 +8,9 @@ namespace Features
     {
         public event Action<Map> Created;
         
-        public Map Build(Map prefab)
+        public Map Build()
         {
-            var map = Object.Instantiate(prefab);
+            var map = Object.FindObjectOfType<Map>();
             Created?.Invoke(map);
             return map;
         }

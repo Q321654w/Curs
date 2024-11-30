@@ -1,6 +1,7 @@
 ﻿using Features.Cars;
 using Features.Maps;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Features
 {
@@ -11,9 +12,10 @@ namespace Features
         [SerializeField] private Map _mapPrefab;
         [SerializeField] private int _loops;
         [SerializeField] private CarConfig _playerConfig;
-
-        public Map MapPrefab => _mapPrefab;
+        [SerializeField] private int _sceneIndex;
+        
         public int Loops => _loops;
+        public int SceneIndex => _sceneIndex;
         public string[] DriverIds => _driverIds;
         public CarConfig PlayerConfig => _playerConfig;
 
@@ -27,12 +29,12 @@ namespace Features
             {
                 var lastIds = _driverIds;
                 _driverIds = new string[length];
-                
+
                 for (int i = 0; i < _driverIds.Length; i++)
                 {
                     if (i >= lastIds.Length)
                         return;
-                    
+
                     _driverIds[i] = lastIds[i];
                 }
             }

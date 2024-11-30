@@ -2,6 +2,8 @@
 using Features;
 using Features.Cars;
 using Features.GameUpdate;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 using Object = UnityEngine.Object;
 
 namespace DefaultNamespace
@@ -37,6 +39,15 @@ namespace DefaultNamespace
         {
             _view.Show();
 
+            var sceneIndex = _config.SceneIndex;
+            var loadingOperation = SceneManager.LoadSceneAsync(sceneIndex, LoadSceneMode.Single);
+            loadingOperation.completed += OnLoaded;
+        }
+
+        private void OnLoaded(AsyncOperation loadingOperation)
+        {
+            loadingOperation.completed -= OnLoaded;
+            
             var playerFactory = _assetDataBase.GetAsset<PlayerDriverFactory>(Constants.PLAYER_DRIVER_FACTORY_ID);
             var carFactory = _assetDataBase.GetAsset<CarFactory>(Constants.CAR_FACTORY_ID);
 
@@ -48,7 +59,7 @@ namespace DefaultNamespace
             };
             var driverFactory = new DriverFactoryFacade(driverFactories);
 
-            var camera = _appInfo.GameInfoContainer.Camera;
+            var camera = Object.FindObjectOfType<Camera>();
             var levelLoader = new LevelLoader(mapBuilder, carFactory, driverFactory, _config.PlayerConfig, camera);
 
             var level = levelLoader.Load(_config);

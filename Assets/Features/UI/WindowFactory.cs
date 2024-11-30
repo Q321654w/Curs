@@ -13,6 +13,7 @@ namespace DefaultNamespace
             _assetDataBase = assetDataBase;
             var canvasPrefab = _assetDataBase.GetAsset<Canvas>(Constants.CANVAS_ID);
             _canvas = Object.Instantiate(canvasPrefab);
+            Object.DontDestroyOnLoad(_canvas.gameObject);
         }
 
         public MainMenuView CreateMainMenu()
