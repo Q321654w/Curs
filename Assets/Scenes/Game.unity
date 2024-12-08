@@ -406,8 +406,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1920714620}
   maxSpeed: 260
-  minSpeedArrowAngle: 20.739
-  maxSpeedArrowAngle: -200.51
+  minSpeedArrowAngle: 10.352
+  maxSpeedArrowAngle: -189.558
   speedLabel: {fileID: 541027761}
   arrow: {fileID: 1359485470}
 --- !u!114 &525725607
@@ -1922,7 +1922,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -11.67}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1372414472
@@ -1957,9 +1957,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1359485470}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.09875178, y: -12.899908}
+  m_AnchorMin: {x: 0.5, y: 0.49}
+  m_AnchorMax: {x: 0.5, y: 0.49}
+  m_AnchoredPosition: {x: 0, y: -0.07}
   m_SizeDelta: {x: 100, y: 10}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1372414474
