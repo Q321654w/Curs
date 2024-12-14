@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace Assets.boeing_737
+namespace Assets.Vehicle_scripts
 {
     internal class Player : MonoBehaviour 
     {
