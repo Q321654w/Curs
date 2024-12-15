@@ -31,7 +31,7 @@ namespace Features
             var drivers = CreateBots(map,config.DriverIds);
 
             var playerCar = CreatePlayerCar(map);
-            var player = CreateDriver(playerCar, Constants.PLAYER_ID);
+            var player = CreateDriver(playerCar, Constants.PlayerID);
 
             drivers.Add(player);
 

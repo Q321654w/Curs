@@ -48,8 +48,8 @@ namespace DefaultNamespace
         {
             loadingOperation.completed -= OnLoaded;
             
-            var playerFactory = _assetDataBase.GetAsset<PlayerDriverFactory>(Constants.PLAYER_DRIVER_FACTORY_ID);
-            var carFactory = _assetDataBase.GetAsset<CarFactory>(Constants.CAR_FACTORY_ID);
+            var playerFactory = _assetDataBase.GetAsset<PlayerDriverFactory>(Constants.PlayerDriverFactoryID);
+            var carFactory = _assetDataBase.GetAsset<CarFactory>(Constants.CarFactoryID);
 
             var mapBuilder = new MapBuilder();
             var driverFactories = new IDriverFactory[]
@@ -65,7 +65,7 @@ namespace DefaultNamespace
             var level = levelLoader.Load(_config);
             Loaded?.Invoke(level);
 
-            var gameUpdatesPrefab = _assetDataBase.GetAsset<GameUpdates>(Constants.GAME_UPDATES_ID);
+            var gameUpdatesPrefab = _assetDataBase.GetAsset<GameUpdates>(Constants.GameUpdatesID);
             var gameUpdates = Object.Instantiate(gameUpdatesPrefab);
             Instanced?.Invoke(gameUpdates);
 

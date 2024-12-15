@@ -8,14 +8,14 @@ using UnityEngine;
 
 namespace Assets.Vehicle_scripts
 {
-    internal class Wheel : MonoBehaviour
+    public class Wheel : MonoBehaviour
     {
         [SerializeField]
         public WheelCollider aboba;
         [SerializeField]
         public Rigidbody vehicle;
         public float Rotation => aboba.steerAngle;
-        public float speed => vehicle.velocity.magnitude * 3.6f;
+        public float RotationSpeed => aboba.rotationSpeed;
 
         public void IncreaseWheelVelocity(float x) 
         {
@@ -29,18 +29,7 @@ namespace Assets.Vehicle_scripts
         }
         public void Rotate(float x)
         {
-            var mltplr = 1 * MathF.Sqrt(aboba.rotationSpeed);
-            if (Mathf.Abs(Rotation) < 50)
-            {
-                if((aboba.steerAngle + x / Mathf.Sqrt(speed) < 50) && (-50 < aboba.steerAngle + x / Mathf.Sqrt(speed)))
-                {
-                    aboba.steerAngle += x / Mathf.Sqrt(speed);
-                }
-            }
-        }
-        public void Start()
-        {
-
+            aboba.steerAngle += x;
         }
     }
 }

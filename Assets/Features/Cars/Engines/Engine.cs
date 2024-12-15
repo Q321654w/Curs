@@ -8,14 +8,14 @@ namespace Features.Cars.Engines
 {
     public class Engine
     {
-        private readonly PIDRegulator _rotateRegulator;
+        private readonly PidRegulator _rotateRegulator;
         private readonly IEnumerable<Wheel> _tractionWheels;
         private readonly IEnumerable<Wheel> _rotateWheels;
         private readonly EngineStats _stats;
 
         private float _speed;
 
-        public Engine(EngineStats stats, PIDRegulator rotateRegulator, IEnumerable<Wheel> wheels)
+        public Engine(EngineStats stats, PidRegulator rotateRegulator, IEnumerable<Wheel> wheels)
         {
             _stats = stats;
             _rotateRegulator = rotateRegulator;

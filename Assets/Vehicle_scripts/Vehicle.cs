@@ -9,6 +9,8 @@ namespace Assets.Vehicle_scripts
 {
     internal class Vehicle : MonoBehaviour
     {
+        [SerializeField] private float _decelerationForce;
+        
         [SerializeField]
         public Headlight[] FrontLights;
         public Headlight[] BackLights;
@@ -41,6 +43,25 @@ namespace Assets.Vehicle_scripts
             for (int i = 0; i < 2; i++)
             {
                 Wheels[i].Rotate(x);
+            }
+        }
+
+        public void Decelerate()
+        {
+            foreach (var wheel in Wheels)
+            {
+                wheel.DecreaseWheelVelocity(wheel.RotationSpeed);
+            }
+        }
+        
+        public void AlignWheels()
+        {
+            foreach (var wheel in Wheels)
+            {
+                if(Mathf.Abs(wheel.Rotation) < 1f)
+                    wheel.Rotate(-wheel.Rotation);
+                else
+                    wheel.Rotate(-Mathf.Sign(wheel.Rotation));
             }
         }
     }

@@ -8,11 +8,11 @@ namespace DefaultNamespace
     {
         private readonly AssetMapper _assetMapper;
         
-        private const string PATH = "AssetMapper";
+        private const string Path = "AssetMapper";
 
         public AssetDataBase()
         {
-            _assetMapper = Resources.Load<AssetMapper>(PATH);
+            _assetMapper = Resources.Load<AssetMapper>(Path);
         }
 
         public T GetAsset<T>(string id) where T : Object

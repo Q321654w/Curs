@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Features
 {
     [Serializable]
-    public class PIDRegulator
+    public class PidRegulator
     {
         [SerializeField] private float _kp;
         [SerializeField] private float _ki;
@@ -13,7 +13,7 @@ namespace Features
         private float _lastError;
         private float _i;
 
-        public PIDRegulator(float pFactor, float iFactor, float dFactor)
+        public PidRegulator(float pFactor, float iFactor, float dFactor)
         {
             _kp = pFactor;
             _ki = iFactor;

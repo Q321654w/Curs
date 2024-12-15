@@ -21,9 +21,9 @@ namespace DefaultNamespace
             _appInfoContainer.AssetDataBase = assetDataBase;
             _appInfoContainer.GameInfoContainer = new GameInfoContainer
             {
-                Treshold = 10F, LevelConfigs = assetDataBase.GetAsset<LevelConfigs>(Constants.LEVEL_CONFIGS_ID).AllConfigs
+                Treshold = 10F, LevelConfigs = assetDataBase.GetAsset<LevelConfigs>(Constants.LevelConfigsID).AllConfigs
             };
-            var cameraPrefab = assetDataBase.GetAsset<Camera>(Constants.CAMERA_ID);
+            var cameraPrefab = assetDataBase.GetAsset<Camera>(Constants.CameraID);
             _appInfoContainer.GameInfoContainer.Camera = Object.Instantiate(cameraPrefab);
             Ended?.Invoke();
         }

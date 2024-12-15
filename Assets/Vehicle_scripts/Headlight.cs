@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Assets.Vehicle_scripts
 {
-    internal class Headlight : MonoBehaviour
+    public class Headlight : MonoBehaviour
     {
         [SerializeField]
         public Light headlight;

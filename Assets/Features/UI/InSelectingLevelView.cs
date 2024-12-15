@@ -23,7 +23,7 @@ namespace DefaultNamespace
             _assetDataBase = assetDataBase;
             _configs = new Dictionary<int, LevelConfig>();
 
-            var buttonPrefab = _assetDataBase.GetAsset<LevelConfigView>(Constants.LEVEL_CONFIG_VIEW_ID);
+            var buttonPrefab = _assetDataBase.GetAsset<LevelConfigView>(Constants.LevelConfigViewID);
             
             for (int i = 0; i < levelConfigs.Length; i++)
             {

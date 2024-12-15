@@ -26,7 +26,7 @@ namespace Features
 
         public bool CanCreate(string id)
         {
-            return id.Contains(Constants.AI_ID_CONTEXT);
+            return id.Contains(Constants.AIIDContext);
         }
 
         public Driver Create(string id, Car car)

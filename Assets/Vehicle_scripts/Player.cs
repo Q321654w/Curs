@@ -20,10 +20,9 @@ namespace Assets.Vehicle_scripts
             }
             else
             {
-                
                 if (rotation != 0)
                 {
-                    Vehicle.Rotate(-Mathf.Sign(rotation));
+                    Vehicle.AlignWheels();
                 }
             }
             
@@ -35,6 +34,13 @@ namespace Assets.Vehicle_scripts
             {
                 Vehicle.DecreaseVelocity();
             }
+
+            if (y == 0)
+            {
+                if(Vehicle.Wheels[0].RotationSpeed != 0)
+                    Vehicle.Decelerate();
+            }
+
 
             if (Input.GetKeyDown(KeyCode.F))
                 Vehicle.ToggleHeadlights();
