@@ -3,10 +3,11 @@ using System.Collections.Generic;
 
 using UnityEngine;
 using UnityEngine.UI;
+using V2;
 
 public class Speedometer : MonoBehaviour
 {
-    public Rigidbody target;
+    public Vehicle target;
 
     public float maxSpeed = 0.0f; // The maximum speed of the target ** IN KM/H **
 
@@ -22,7 +23,7 @@ public class Speedometer : MonoBehaviour
     {
         // 3.6f to convert in kilometers
         // ** The speed must be clamped by the car controller **
-        speed = target.velocity.magnitude * 3.6f;
+        speed = target.Rigidbody.velocity.magnitude * 3.6f;
 
         if (speedLabel != null)
             speedLabel.text = ((int)speed) + " km/h";

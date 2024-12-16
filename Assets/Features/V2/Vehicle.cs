@@ -7,6 +7,9 @@ namespace V2
         public Wheel[] Wheels;
         public Motor Motor;
 
+        public Rigidbody Rigidbody;
+
+
         public void UpdateWheels()
         {
             foreach (var wheel in Wheels)

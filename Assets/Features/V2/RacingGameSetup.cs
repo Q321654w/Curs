@@ -11,12 +11,15 @@ namespace V2
         public Transform[] AIWaypoints;
 
         public GameObject VehiclePrefab;
-        public GameObject PlayerControllerPrefab;
-        public GameObject AIControllerPrefab;
+        public PlayerCarController PlayerControllerPrefab;
+        public AICarController AIControllerPrefab;
         public GameObject SpeedometerPrefab;
         public GameObject CountdownUIPrefab;
+        public Camera Camera;
 
         public float CountdownDuration = 3f;
+        private AICarController _aiController;
+        private PlayerCarController _playerController;
 
         void Start()
         {
@@ -50,21 +53,24 @@ namespace V2
             return vehicleObject.GetComponent<Vehicle>();
         }
 
-        void InitializePlayer(Vehicle vehicle, GameObject controllerPrefab)
+        void InitializePlayer(Vehicle vehicle, PlayerCarController controllerPrefab)
         {
             var controllerObject = Instantiate(controllerPrefab);
-            var playerController = controllerObject.GetComponent<PlayerCarController>();
-            playerController.Vehicle = vehicle;
-
+            _playerController = controllerObject.GetComponent<PlayerCarController>();
+            _playerController.Vehicle = vehicle;
+            var cam = Instantiate(Camera);
+            cam.transform.SetParent(vehicle.transform);
+            cam.transform.localPosition = new Vector3(0, 5, -7);
+            cam.transform.localRotation = Quaternion.Euler(15, 0, 0);
             vehicle.gameObject.tag = "Player";
         }
 
-        void InitializeAI(Vehicle vehicle, GameObject controllerPrefab, Transform[] waypoints)
+        void InitializeAI(Vehicle vehicle, AICarController controllerPrefab, Transform[] waypoints)
         {
             var controllerObject = Instantiate(controllerPrefab);
-            var aiController = controllerObject.GetComponent<AICarController>();
-            aiController.Vehicle = vehicle;
-            aiController.Waypoints = waypoints;
+            _aiController = controllerObject.GetComponent<AICarController>();
+            _aiController.Vehicle = vehicle;
+            _aiController.Waypoints = waypoints;
 
             vehicle.gameObject.tag = "AI";
         }
@@ -73,7 +79,7 @@ namespace V2
         {
             var speedometerObject = Instantiate(SpeedometerPrefab);
             var speedometer = speedometerObject.GetComponent<Speedometer>();
-            speedometer.Vehicle = vehicle;
+            speedometer.target = vehicle;
         }
 
         IEnumerator StartCountdown(Vehicle playerVehicle, Vehicle aiVehicle)
@@ -81,16 +87,13 @@ namespace V2
             var countdownUI = Instantiate(CountdownUIPrefab).GetComponent<CountdownUI>();
             countdownUI.StartCountdown(CountdownDuration);
 
-            var playerController = playerVehicle.GetComponent<PlayerCarController>();
-            var aiController = aiVehicle.GetComponent<AICarController>();
-
-            if (playerController != null) playerController.enabled = false;
-            if (aiController != null) aiController.enabled = false;
+            _playerController.enabled = false;
+            _aiController.enabled = false;
 
             yield return new WaitForSeconds(CountdownDuration);
 
-            if (playerController != null) playerController.enabled = true;
-            if (aiController != null) aiController.enabled = true;
+            _playerController.enabled = true;
+            _aiController.enabled = true;
         }
     }
 }

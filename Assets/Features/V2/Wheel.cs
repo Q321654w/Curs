@@ -3,7 +3,7 @@
 namespace V2
 {
     [System.Serializable]
-    public class Wheel
+    public class Wheel : MonoBehaviour
     {
         public WheelCollider Collider;
         public Transform Transform;

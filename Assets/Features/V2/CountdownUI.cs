@@ -1,12 +1,12 @@
 ﻿using System.Collections;
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace V2
 {
     public class CountdownUI : MonoBehaviour
     {
-        public Text CountdownText;
+        public TMP_Text CountdownText;
         public Color RedColor;
         public Color YellowColor;
         public Color GreenColor;
