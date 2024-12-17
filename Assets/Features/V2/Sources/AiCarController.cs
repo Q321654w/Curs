@@ -20,7 +20,7 @@ namespace V2.Sources
 
         [Header("Car Settings")]
         [SerializeField] private float _maxMotorTorque = 1500f; // Максимальная тяга
-        [SerializeField] private float _maxSteeringAngle = 30f; // Угол поворота колёс
+        [SerializeField] private float _inputSteeringAngle = 30f; // Угол поворота колёс
         [SerializeField] private float _waypointThreshold = 3f; // Порог приближения к точке
         [SerializeField] private float _maxCarSpeed = 20f; // Максимальная скорость автомобиля
         [SerializeField] private float _accelerationMagnitude = 30f; // Лимит ускорения
@@ -103,7 +103,7 @@ namespace V2.Sources
         {
             var localTarget = transform.InverseTransformPoint(directionToWaypoint + transform.position);
             var angle = Mathf.Atan2(localTarget.x, localTarget.z) * Mathf.Rad2Deg;
-            return Mathf.Clamp(angle, -_maxSteeringAngle, _maxSteeringAngle);
+            return Mathf.Clamp(angle, -_inputSteeringAngle, _inputSteeringAngle);
         }
 
         private void UpdateWheelPositions()
