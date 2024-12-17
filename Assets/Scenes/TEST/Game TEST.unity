@@ -405,17 +405,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3411793609609484615, guid: d2575906761240442b88d5d70db75983, type: 3}
   m_PrefabInstance: {fileID: 488525894}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &488525896 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6841288142513760240, guid: d2575906761240442b88d5d70db75983, type: 3}
-  m_PrefabInstance: {fileID: 488525894}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 334ccfa41a670414a9a7fdc9b27649a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &553004665
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -736,7 +725,7 @@ MonoBehaviour:
   _playerLapText: {fileID: 291121256}
   _countDownText: {fileID: 2132668346}
   _resultWindow: {fileID: 2072931427}
-  _speedometer: {fileID: 488525896}
+  _speedometer: {fileID: 1337813791}
   _carPrefabs:
   - {fileID: 8166228199896369596, guid: 16873d5995bb6924a99c92ca3a5f0b68, type: 3}
   - {fileID: 8166228199896369596, guid: a882df1ab8d3cb6418ab007e50da1e48, type: 3}
@@ -1222,6 +1211,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264785810}
   m_CullTransparentMesh: 1
+--- !u!114 &1337813791 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6393979113853572477, guid: d2575906761240442b88d5d70db75983, type: 3}
+  m_PrefabInstance: {fileID: 488525894}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d15bdcbcbf494d8abfc4f6226bbaf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1412749755
 GameObject:
   m_ObjectHideFlags: 0

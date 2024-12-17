@@ -6,9 +6,9 @@ namespace V2
     {
         public Light Light;
 
-        public void Toggle(bool state)
+        public void Toggle()
         {
-            Light.enabled = state;
+            Light.enabled = !Light.enabled;
         }
     }
 }

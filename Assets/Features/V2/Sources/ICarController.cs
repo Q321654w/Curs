@@ -8,6 +8,6 @@ namespace V2.Sources
     {
         public void Activate();
         public void Deactivate();
-        public void SetUpWayPoints(List<Transform> wayPoints);
+        public void SetUpWayPoints(List<Checkpoint> wayPoints);
     }
 }

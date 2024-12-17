@@ -1,22 +1,19 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using V2.Sources;
 
 
 namespace V2
 {
     public class Checkpoint : MonoBehaviour
     {
-        public TrackManager TrackManager;
+        [SerializeField] private int _index;
+        public event Action<GameObject, int> Reached;
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.CompareTag("Player"))
-            {
-                TrackManager.PlayerPassedCheckpoint(transform);
-            }
-            else if (other.CompareTag("AI"))
-            {
-                TrackManager.AIPassedCheckpoint(transform);
-            }
+            if (other.gameObject.TryGetComponent<ICarController>(out _))
+                Reached?.Invoke(other.gameObject, _index);
         }
     }
 }

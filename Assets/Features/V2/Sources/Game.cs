@@ -2,8 +2,8 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using PathCreation;
 using TMPro;
+using V2.spidmtr;
 
 namespace V2.Sources
 {
@@ -15,28 +15,47 @@ namespace V2.Sources
         [SerializeField] private TMP_Text _playerLapText;
         [SerializeField] private TMP_Text _countDownText;
         [SerializeField] private ResultWindow _resultWindow;
-        [SerializeField] private Speedometer _speedometer;
+        [SerializeField] private Speedometr _speedometer;
         [SerializeField] private GameObject[] _carPrefabs;
         [SerializeField] private Transform[] _spawnPoints;
-        [SerializeField] private List<Transform> _waypoints;
+        [SerializeField] private List<Checkpoint> _waypoints;
+        
+        [Header("Colors")]
+        [SerializeField] private Color _redColor;
+        [SerializeField] private Color _orangeColor;
+        [SerializeField] private Color _yellowColor;
+        [SerializeField] private Color _greenColor;
 
         private bool _raceStarted;
         private GameObject _playerGameObject;
         private readonly List<GameObject> _finishedCars = new();
         private readonly Dictionary<GameObject, int> _carLapCounts = new();
+        private readonly Dictionary<GameObject, int> _carCheckpointIndex = new();
 
         private void Start()
         {
+            foreach (var waypoint in _waypoints)
+            {
+                waypoint.Reached += OnReached;
+            }
+            
             _resultWindow.gameObject.SetActive(false);
             _playerLapText.text = $"Lap: 0/{_targetLaps}";
             
             SpawnCars();
 
-            _speedometer.target = _playerGameObject.GetComponent<Rigidbody>(); 
+            _speedometer.target = _playerGameObject.GetComponentInChildren<Rigidbody>(); 
 
             StartCoroutine(StartRaceCountdown());
             StartCoroutine(TurnOffCountdown());
         }
+
+        private void OnReached(GameObject obj, int index)
+        {
+            if(_carCheckpointIndex.TryGetValue(obj, out var currentIndex) && currentIndex - index == 1)
+                _carCheckpointIndex[obj] = index;
+        }
+
         private void Update()
         {
             if (!_raceStarted) return;
@@ -44,10 +63,13 @@ namespace V2.Sources
             UpdatePlayerLapUI();
             CheckRaceCompletion();
         }
+        
         private void OnTriggerEnter(Collider other)
         {
             var car = other.transform.parent.gameObject;
-            if (car != null && _carLapCounts.Any(x => x.Key.GetInstanceID() == car.GetInstanceID()))
+            if (car != null 
+                && _carLapCounts.Any(x => x.Key.GetInstanceID() == car.GetInstanceID()) 
+                && _carCheckpointIndex[car] == _waypoints.Count - 1)
             {
                 _carLapCounts[car]++;
                 Debug.Log($"{car.GetInstanceID()} is on the lap {_carLapCounts[car]}");
@@ -63,20 +85,24 @@ namespace V2.Sources
         private IEnumerator StartRaceCountdown()
         {
             _countDownText.text = "Race starts in 3...";
+            _countDownText.color = _redColor;
             yield return new WaitForSeconds(1);
             _countDownText.text = "2...";
+            _countDownText.color = _orangeColor;
             yield return new WaitForSeconds(1);
             _countDownText.text = "1...";
+            _countDownText.color = _yellowColor;
             yield return new WaitForSeconds(1);
             _countDownText.text = "Go!";
+            _countDownText.color = _greenColor;
             
             foreach (var car in _carLapCounts.Keys)
-            {
                 car.GetComponent<ICarController>().Activate();
-            }
+            
 
             _raceStarted = true;
         }
+        
         private IEnumerator TurnOffCountdown()
         {
             yield return new WaitForSeconds(4);
@@ -97,8 +123,10 @@ namespace V2.Sources
                 carObject.GetComponent<ICarController>().SetUpWayPoints(_waypoints);
                 
                 _carLapCounts.Add(carObject, 0);
+                _carCheckpointIndex.Add(carObject, 0);
             }
         }
+        
         private void UpdatePlayerLapUI()
         {
             if (_carLapCounts.TryGetValue(_playerGameObject, out var playerLaps))
@@ -106,6 +134,7 @@ namespace V2.Sources
                 _playerLapText.text = $"Lap: {playerLaps}/{_targetLaps}";
             }
         }
+        
         private void CheckRaceCompletion()
         {
             if (_carLapCounts[_playerGameObject] >= _targetLaps)
@@ -116,6 +145,7 @@ namespace V2.Sources
                 ShowResultWindow();
             }
         }
+        
         private void ShowResultWindow()
         {
             _resultWindow.gameObject.SetActive(true);

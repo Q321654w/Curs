@@ -30,7 +30,7 @@ namespace V2.Sources
 
         private bool _canDrive;
         private int _currentWaypointIndex;
-        private List<Transform> _waypoints;
+        private List<Checkpoint> _waypoints;
 
         private void Update()
         {
@@ -58,7 +58,7 @@ namespace V2.Sources
             _canDrive = false;
         }
 
-        public void SetUpWayPoints(List<Transform> wayPoints)
+        public void SetUpWayPoints(List<Checkpoint> wayPoints)
         {
             _waypoints = wayPoints;
         }
@@ -66,7 +66,7 @@ namespace V2.Sources
         private void MoveTowardsWaypoint()
         {
             var targetWaypoint = _waypoints[_currentWaypointIndex];
-            var directionToWaypoint = (targetWaypoint.position - transform.position).normalized;
+            var directionToWaypoint = (targetWaypoint.transform.position - transform.position).normalized;
 
             // Рассчитываем угол поворота
             var steering = CalculateSteeringAngle(directionToWaypoint);
@@ -74,7 +74,7 @@ namespace V2.Sources
             _frontRightWheel.steerAngle = steering;
 
             // Проверка на достижение точки
-            if (Vector3.Distance(transform.position, targetWaypoint.position) < _waypointThreshold)
+            if (Vector3.Distance(transform.position, targetWaypoint.transform.position) < _waypointThreshold)
             {
                 _currentWaypointIndex = (_currentWaypointIndex + 1) % _waypoints.Count;
             }

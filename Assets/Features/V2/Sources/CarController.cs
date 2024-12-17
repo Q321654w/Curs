@@ -6,7 +6,12 @@ namespace V2.Sources
 {
     public class CarController : MonoBehaviour, ICarController
     {
-        [Header("Wheel Colliders")] [SerializeField]
+        [Header("Light")] 
+        [SerializeField] private Headlight[] _headlights;
+        [SerializeField] private Headlight[] _backlights;
+        
+        [Header("Wheel Colliders")] 
+        [SerializeField]
         private WheelCollider _frontLeftWheel;
 
         [SerializeField] private WheelCollider _frontRightWheel;
@@ -44,8 +49,24 @@ namespace V2.Sources
             _steeringInput = Input.GetAxis("Horizontal");
             _isBraking = Input.GetKey(KeyCode.Space);
 
+            UpdateLights();
             UpdateWheelPositions();
             UpdateEngineSound();
+        }
+
+        private void UpdateLights()
+        {
+            if (Input.GetKeyDown(KeyCode.F))
+                ToggleHeadLigts(_headlights);
+            
+            if (Input.GetKeyDown(KeyCode.G))
+                ToggleHeadLigts(_backlights);
+        }
+
+        private void ToggleHeadLigts(Headlight[] headlights)
+        {
+            foreach (var headlight in headlights)
+                headlight.Toggle();
         }
 
         private void FixedUpdate()
@@ -67,7 +88,7 @@ namespace V2.Sources
             _canDrive = false;
         }
 
-        public void SetUpWayPoints(List<Transform> wayPoints)
+        public void SetUpWayPoints(List<Checkpoint> wayPoints)
         {
         }
 
