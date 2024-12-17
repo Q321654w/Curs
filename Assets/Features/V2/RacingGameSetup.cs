@@ -79,7 +79,7 @@ namespace V2
         {
             var speedometerObject = Instantiate(SpeedometerPrefab);
             var speedometer = speedometerObject.GetComponent<Speedometer>();
-            speedometer.target = vehicle;
+            //speedometer.Target = vehicle;
         }
 
         IEnumerator StartCountdown(Vehicle playerVehicle, Vehicle aiVehicle)
