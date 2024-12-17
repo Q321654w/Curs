@@ -104,11 +104,12 @@ namespace V2.Sources
 
         private void HandleSteering()
         {
+            var steerSpeed = 50f;
             var t = GetCarSpeed() / _maxSpeed;
             var targetSteeringAngle = _steeringInput * _inputSteeringAngle * Mathf.Lerp(1f, _maxMotorTorqueSteerCoefficient, t);
-            var currentSteeringAngle =
-                Mathf.Lerp(_frontLeftWheel.steerAngle, targetSteeringAngle, Time.fixedDeltaTime * 2f);
-
+            var currentSteeringAngle = Mathf.MoveTowards(
+                _frontLeftWheel.steerAngle, targetSteeringAngle, steerSpeed * Time.fixedDeltaTime);
+            
             _frontLeftWheel.steerAngle = currentSteeringAngle;
             _frontRightWheel.steerAngle = currentSteeringAngle;
         }
