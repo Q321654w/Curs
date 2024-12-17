@@ -71,6 +71,7 @@ namespace V2.Sources
                 && _carLapCounts.Any(x => x.Key.GetInstanceID() == car.GetInstanceID()) 
                 && _carCheckpointIndex[car] == _waypoints.Count - 1)
             {
+                _carCheckpointIndex[car] = 0;
                 _carLapCounts[car]++;
                 Debug.Log($"{car.GetInstanceID()} is on the lap {_carLapCounts[car]}");
 
