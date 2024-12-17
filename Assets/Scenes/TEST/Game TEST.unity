@@ -192,7 +192,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &33367932
 GameObject:
@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 33367933}
   - component: {fileID: 33367935}
   m_Layer: 0
-  m_Name: Waypoint 32
+  m_Name: Waypoint 31
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 32
+  Index: 31
 --- !u!4 &33367934
 Transform:
   m_ObjectHideFlags: 0
@@ -259,7 +259,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &69956201
 PrefabInstance:
@@ -291,7 +291,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.size
-      value: 59
+      value: 58
       objectReference: {fileID: 0}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Checkpoints.Array.size
@@ -404,131 +404,131 @@ PrefabInstance:
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[26]
       value: 
-      objectReference: {fileID: 2019762321}
+      objectReference: {fileID: 2016612994}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[27]
       value: 
-      objectReference: {fileID: 2016612994}
+      objectReference: {fileID: 240903714}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[28]
       value: 
-      objectReference: {fileID: 240903714}
+      objectReference: {fileID: 1727392581}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[29]
       value: 
-      objectReference: {fileID: 1727392581}
+      objectReference: {fileID: 1572584827}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[30]
       value: 
-      objectReference: {fileID: 1572584827}
+      objectReference: {fileID: 1631775617}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[31]
       value: 
-      objectReference: {fileID: 1631775617}
+      objectReference: {fileID: 33367933}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[32]
       value: 
-      objectReference: {fileID: 33367933}
+      objectReference: {fileID: 443822130}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[33]
       value: 
-      objectReference: {fileID: 443822130}
+      objectReference: {fileID: 1744533454}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[34]
       value: 
-      objectReference: {fileID: 1744533454}
+      objectReference: {fileID: 1279624001}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[35]
       value: 
-      objectReference: {fileID: 1279624001}
+      objectReference: {fileID: 69956210}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[36]
       value: 
-      objectReference: {fileID: 69956210}
+      objectReference: {fileID: 69956209}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[37]
       value: 
-      objectReference: {fileID: 69956209}
+      objectReference: {fileID: 69956208}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[38]
       value: 
-      objectReference: {fileID: 69956208}
+      objectReference: {fileID: 174206470}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[39]
       value: 
-      objectReference: {fileID: 174206470}
+      objectReference: {fileID: 113207739}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[40]
       value: 
-      objectReference: {fileID: 113207739}
+      objectReference: {fileID: 999428350}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[41]
       value: 
-      objectReference: {fileID: 999428350}
+      objectReference: {fileID: 1032814037}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[42]
       value: 
-      objectReference: {fileID: 1032814037}
+      objectReference: {fileID: 996603631}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[43]
       value: 
-      objectReference: {fileID: 996603631}
+      objectReference: {fileID: 203831004}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[44]
       value: 
-      objectReference: {fileID: 203831004}
+      objectReference: {fileID: 668219882}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[45]
       value: 
-      objectReference: {fileID: 668219882}
+      objectReference: {fileID: 817285942}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[46]
       value: 
-      objectReference: {fileID: 817285942}
+      objectReference: {fileID: 721657496}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[47]
       value: 
-      objectReference: {fileID: 721657496}
+      objectReference: {fileID: 1732874763}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[48]
       value: 
-      objectReference: {fileID: 1732874763}
+      objectReference: {fileID: 1832864092}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[49]
       value: 
-      objectReference: {fileID: 1832864092}
+      objectReference: {fileID: 1742704173}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[50]
       value: 
-      objectReference: {fileID: 1742704173}
+      objectReference: {fileID: 1144067827}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[51]
       value: 
-      objectReference: {fileID: 1144067827}
+      objectReference: {fileID: 1479170765}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[52]
       value: 
-      objectReference: {fileID: 1479170765}
+      objectReference: {fileID: 875026878}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[53]
       value: 
-      objectReference: {fileID: 875026878}
+      objectReference: {fileID: 753005958}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[54]
       value: 
-      objectReference: {fileID: 753005958}
+      objectReference: {fileID: 415271148}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[55]
       value: 
-      objectReference: {fileID: 415271148}
+      objectReference: {fileID: 1132850322}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[56]
       value: 
-      objectReference: {fileID: 1132850322}
+      objectReference: {fileID: 463503300}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[57]
       value: 
-      objectReference: {fileID: 463503300}
+      objectReference: {fileID: 1552749326}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Waypoints.Array.data[58]
       value: 
@@ -640,7 +640,7 @@ PrefabInstance:
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Checkpoints.Array.data[26]
       value: 
-      objectReference: {fileID: 2019762321}
+      objectReference: {fileID: 0}
     - target: {fileID: 149818352592612427, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: Checkpoints.Array.data[27]
       value: 
@@ -955,7 +955,7 @@ PrefabInstance:
       objectReference: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 2776803936810973191, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: m_Name
-      value: Waypoint 36
+      value: Waypoint 35
       objectReference: {fileID: 0}
     - target: {fileID: 3107801654827422532, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1263,7 +1263,7 @@ PrefabInstance:
       objectReference: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 7885412369662188311, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: m_Name
-      value: Waypoint 38
+      value: Waypoint 37
       objectReference: {fileID: 0}
     - target: {fileID: 7955049941930444660, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: m_Icon
@@ -1359,7 +1359,7 @@ PrefabInstance:
       objectReference: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 9079381219570659387, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: m_Name
-      value: Waypoint 37
+      value: Waypoint 36
       objectReference: {fileID: 0}
     - target: {fileID: 9172571593515110917, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1431,33 +1431,30 @@ PrefabInstance:
       addedObject: {fileID: 822430485}
     - targetCorrespondingSourceObject: {fileID: 2636510059388327907, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       insertIndex: 26
-      addedObject: {fileID: 2019762322}
-    - targetCorrespondingSourceObject: {fileID: 2636510059388327907, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
-      insertIndex: 27
       addedObject: {fileID: 2016612995}
     - targetCorrespondingSourceObject: {fileID: 2636510059388327907, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
-      insertIndex: 28
+      insertIndex: 27
       addedObject: {fileID: 240903715}
     - targetCorrespondingSourceObject: {fileID: 2636510059388327907, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
-      insertIndex: 29
+      insertIndex: 28
       addedObject: {fileID: 1727392582}
     - targetCorrespondingSourceObject: {fileID: 2636510059388327907, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
-      insertIndex: 30
+      insertIndex: 29
       addedObject: {fileID: 1572584828}
     - targetCorrespondingSourceObject: {fileID: 2636510059388327907, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
-      insertIndex: 31
+      insertIndex: 30
       addedObject: {fileID: 1631775618}
     - targetCorrespondingSourceObject: {fileID: 2636510059388327907, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
-      insertIndex: 32
+      insertIndex: 31
       addedObject: {fileID: 33367934}
     - targetCorrespondingSourceObject: {fileID: 2636510059388327907, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
-      insertIndex: 33
+      insertIndex: 32
       addedObject: {fileID: 443822131}
     - targetCorrespondingSourceObject: {fileID: 2636510059388327907, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
-      insertIndex: 34
+      insertIndex: 33
       addedObject: {fileID: 1744533455}
     - targetCorrespondingSourceObject: {fileID: 2636510059388327907, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
-      insertIndex: 35
+      insertIndex: 34
       addedObject: {fileID: 1279624002}
     - targetCorrespondingSourceObject: {fileID: 2636510059388327907, guid: 52c0a9b4c795eaf4883e9d4dcefccb18, type: 3}
       insertIndex: -1
@@ -1734,7 +1731,7 @@ GameObject:
   - component: {fileID: 113207739}
   - component: {fileID: 113207741}
   m_Layer: 0
-  m_Name: Waypoint 40
+  m_Name: Waypoint 39
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1752,7 +1749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 40
+  Index: 39
 --- !u!4 &113207740
 Transform:
   m_ObjectHideFlags: 0
@@ -1787,7 +1784,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &134068735 stripped
 GameObject:
@@ -1859,7 +1856,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &174206469
 GameObject:
@@ -1873,7 +1870,7 @@ GameObject:
   - component: {fileID: 174206470}
   - component: {fileID: 174206472}
   m_Layer: 0
-  m_Name: Waypoint 39
+  m_Name: Waypoint 38
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1891,7 +1888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 39
+  Index: 38
 --- !u!4 &174206471
 Transform:
   m_ObjectHideFlags: 0
@@ -1926,7 +1923,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &203831003
 GameObject:
@@ -1940,7 +1937,7 @@ GameObject:
   - component: {fileID: 203831004}
   - component: {fileID: 203831006}
   m_Layer: 0
-  m_Name: Waypoint 44
+  m_Name: Waypoint 43
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1958,7 +1955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 44
+  Index: 43
 --- !u!4 &203831005
 Transform:
   m_ObjectHideFlags: 0
@@ -1993,7 +1990,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &240903713
 GameObject:
@@ -2007,7 +2004,7 @@ GameObject:
   - component: {fileID: 240903714}
   - component: {fileID: 240903716}
   m_Layer: 0
-  m_Name: Waypoint 28
+  m_Name: Waypoint 27
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2025,7 +2022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 28
+  Index: 27
 --- !u!4 &240903715
 Transform:
   m_ObjectHideFlags: 0
@@ -2060,7 +2057,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &291121254
 GameObject:
@@ -2261,7 +2258,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &415271147
 GameObject:
@@ -2275,7 +2272,7 @@ GameObject:
   - component: {fileID: 415271148}
   - component: {fileID: 415271150}
   m_Layer: 0
-  m_Name: Waypoint 55
+  m_Name: Waypoint 54
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2293,7 +2290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 55
+  Index: 54
 --- !u!4 &415271149
 Transform:
   m_ObjectHideFlags: 0
@@ -2328,7 +2325,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &443822129
 GameObject:
@@ -2342,7 +2339,7 @@ GameObject:
   - component: {fileID: 443822130}
   - component: {fileID: 443822132}
   m_Layer: 0
-  m_Name: Waypoint 33
+  m_Name: Waypoint 32
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2360,7 +2357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 33
+  Index: 32
 --- !u!4 &443822131
 Transform:
   m_ObjectHideFlags: 0
@@ -2395,7 +2392,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &463503299
 GameObject:
@@ -2409,7 +2406,7 @@ GameObject:
   - component: {fileID: 463503300}
   - component: {fileID: 463503302}
   m_Layer: 0
-  m_Name: Waypoint 57
+  m_Name: Waypoint 56
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2427,7 +2424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 57
+  Index: 56
 --- !u!4 &463503301
 Transform:
   m_ObjectHideFlags: 0
@@ -2462,7 +2459,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &488525894
 PrefabInstance:
@@ -2859,7 +2856,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &668219881
 GameObject:
@@ -2873,7 +2870,7 @@ GameObject:
   - component: {fileID: 668219882}
   - component: {fileID: 668219884}
   m_Layer: 0
-  m_Name: Waypoint 45
+  m_Name: Waypoint 44
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2891,7 +2888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 45
+  Index: 44
 --- !u!4 &668219883
 Transform:
   m_ObjectHideFlags: 0
@@ -2926,7 +2923,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &721657495
 GameObject:
@@ -2940,7 +2937,7 @@ GameObject:
   - component: {fileID: 721657496}
   - component: {fileID: 721657498}
   m_Layer: 0
-  m_Name: Waypoint 47
+  m_Name: Waypoint 46
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2958,7 +2955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 47
+  Index: 46
 --- !u!4 &721657497
 Transform:
   m_ObjectHideFlags: 0
@@ -2993,7 +2990,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &753005957
 GameObject:
@@ -3007,7 +3004,7 @@ GameObject:
   - component: {fileID: 753005958}
   - component: {fileID: 753005960}
   m_Layer: 0
-  m_Name: Waypoint 54
+  m_Name: Waypoint 53
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -3025,7 +3022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 54
+  Index: 53
 --- !u!4 &753005959
 Transform:
   m_ObjectHideFlags: 0
@@ -3060,7 +3057,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &817285941
 GameObject:
@@ -3074,7 +3071,7 @@ GameObject:
   - component: {fileID: 817285942}
   - component: {fileID: 817285944}
   m_Layer: 0
-  m_Name: Waypoint 46
+  m_Name: Waypoint 45
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -3092,7 +3089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 46
+  Index: 45
 --- !u!4 &817285943
 Transform:
   m_ObjectHideFlags: 0
@@ -3127,7 +3124,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &822430483
 GameObject:
@@ -3194,7 +3191,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &847968910
 GameObject:
@@ -3282,7 +3279,6 @@ MonoBehaviour:
   - {fileID: 16345201}
   - {fileID: 1623120381}
   - {fileID: 822430484}
-  - {fileID: 2019762321}
   - {fileID: 2016612994}
   - {fileID: 240903714}
   - {fileID: 1727392581}
@@ -3384,7 +3380,7 @@ GameObject:
   - component: {fileID: 875026878}
   - component: {fileID: 875026880}
   m_Layer: 0
-  m_Name: Waypoint 53
+  m_Name: Waypoint 52
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -3402,7 +3398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 53
+  Index: 52
 --- !u!4 &875026879
 Transform:
   m_ObjectHideFlags: 0
@@ -3437,7 +3433,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &910440309
 GameObject:
@@ -3545,7 +3541,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &993708627 stripped
 Transform:
@@ -3564,7 +3560,7 @@ GameObject:
   - component: {fileID: 996603631}
   - component: {fileID: 996603633}
   m_Layer: 0
-  m_Name: Waypoint 43
+  m_Name: Waypoint 42
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -3582,7 +3578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 43
+  Index: 42
 --- !u!4 &996603632
 Transform:
   m_ObjectHideFlags: 0
@@ -3617,7 +3613,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &997977173
 GameObject:
@@ -3665,7 +3661,7 @@ GameObject:
   - component: {fileID: 999428350}
   - component: {fileID: 999428352}
   m_Layer: 0
-  m_Name: Waypoint 41
+  m_Name: Waypoint 40
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -3683,7 +3679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 41
+  Index: 40
 --- !u!4 &999428351
 Transform:
   m_ObjectHideFlags: 0
@@ -3718,7 +3714,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &1025245991
 BoxCollider:
@@ -3739,7 +3735,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1029242623 stripped
 GameObject:
@@ -3758,7 +3754,7 @@ GameObject:
   - component: {fileID: 1032814037}
   - component: {fileID: 1032814039}
   m_Layer: 0
-  m_Name: Waypoint 42
+  m_Name: Waypoint 41
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -3776,7 +3772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 42
+  Index: 41
 --- !u!4 &1032814038
 Transform:
   m_ObjectHideFlags: 0
@@ -3811,7 +3807,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1033133525 stripped
 GameObject:
@@ -3883,7 +3879,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1098999640
 GameObject:
@@ -3950,7 +3946,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1132850321
 GameObject:
@@ -3964,7 +3960,7 @@ GameObject:
   - component: {fileID: 1132850322}
   - component: {fileID: 1132850324}
   m_Layer: 0
-  m_Name: Waypoint 56
+  m_Name: Waypoint 55
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -3982,7 +3978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 56
+  Index: 55
 --- !u!4 &1132850323
 Transform:
   m_ObjectHideFlags: 0
@@ -4017,7 +4013,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1144067826
 GameObject:
@@ -4031,7 +4027,7 @@ GameObject:
   - component: {fileID: 1144067827}
   - component: {fileID: 1144067829}
   m_Layer: 0
-  m_Name: Waypoint 51
+  m_Name: Waypoint 50
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -4049,7 +4045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 51
+  Index: 50
 --- !u!4 &1144067828
 Transform:
   m_ObjectHideFlags: 0
@@ -4084,7 +4080,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1173943270
 GameObject:
@@ -4419,7 +4415,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1264785810
 GameObject:
@@ -4554,7 +4550,7 @@ GameObject:
   - component: {fileID: 1279624001}
   - component: {fileID: 1279624003}
   m_Layer: 0
-  m_Name: Waypoint 35
+  m_Name: Waypoint 34
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -4572,7 +4568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 35
+  Index: 34
 --- !u!4 &1279624002
 Transform:
   m_ObjectHideFlags: 0
@@ -4607,7 +4603,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1353629444 stripped
 GameObject:
@@ -4633,7 +4629,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &1364775317
 BoxCollider:
@@ -4654,7 +4650,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1455236810
 GameObject:
@@ -4780,7 +4776,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1479170764
 GameObject:
@@ -4794,7 +4790,7 @@ GameObject:
   - component: {fileID: 1479170765}
   - component: {fileID: 1479170767}
   m_Layer: 0
-  m_Name: Waypoint 52
+  m_Name: Waypoint 51
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -4812,7 +4808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 52
+  Index: 51
 --- !u!4 &1479170766
 Transform:
   m_ObjectHideFlags: 0
@@ -4847,7 +4843,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1502815324
 GameObject:
@@ -4914,7 +4910,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1552548610 stripped
 GameObject:
@@ -4933,7 +4929,7 @@ GameObject:
   - component: {fileID: 1552749326}
   - component: {fileID: 1552749328}
   m_Layer: 0
-  m_Name: Waypoint 58
+  m_Name: Waypoint 57
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -4951,7 +4947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 58
+  Index: 57
 --- !u!4 &1552749327
 Transform:
   m_ObjectHideFlags: 0
@@ -4986,7 +4982,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &1568981484
 BoxCollider:
@@ -5007,7 +5003,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1572584826
 GameObject:
@@ -5021,7 +5017,7 @@ GameObject:
   - component: {fileID: 1572584827}
   - component: {fileID: 1572584829}
   m_Layer: 0
-  m_Name: Waypoint 30
+  m_Name: Waypoint 29
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -5039,7 +5035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 30
+  Index: 29
 --- !u!4 &1572584828
 Transform:
   m_ObjectHideFlags: 0
@@ -5074,7 +5070,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1577712311
 GameObject:
@@ -5141,7 +5137,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1623120380
 GameObject:
@@ -5208,7 +5204,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1631775616
 GameObject:
@@ -5222,7 +5218,7 @@ GameObject:
   - component: {fileID: 1631775617}
   - component: {fileID: 1631775619}
   m_Layer: 0
-  m_Name: Waypoint 31
+  m_Name: Waypoint 30
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -5240,7 +5236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 31
+  Index: 30
 --- !u!4 &1631775618
 Transform:
   m_ObjectHideFlags: 0
@@ -5275,7 +5271,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1644150623
 GameObject:
@@ -5342,7 +5338,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1681271448 stripped
 GameObject:
@@ -5368,7 +5364,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1727392580
 GameObject:
@@ -5382,7 +5378,7 @@ GameObject:
   - component: {fileID: 1727392581}
   - component: {fileID: 1727392583}
   m_Layer: 0
-  m_Name: Waypoint 29
+  m_Name: Waypoint 28
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -5400,7 +5396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 29
+  Index: 28
 --- !u!4 &1727392582
 Transform:
   m_ObjectHideFlags: 0
@@ -5435,7 +5431,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1729647347
 GameObject:
@@ -5480,7 +5476,7 @@ GameObject:
   - component: {fileID: 1732874763}
   - component: {fileID: 1732874765}
   m_Layer: 0
-  m_Name: Waypoint 48
+  m_Name: Waypoint 47
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -5498,7 +5494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 48
+  Index: 47
 --- !u!4 &1732874764
 Transform:
   m_ObjectHideFlags: 0
@@ -5533,7 +5529,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1742704172
 GameObject:
@@ -5547,7 +5543,7 @@ GameObject:
   - component: {fileID: 1742704173}
   - component: {fileID: 1742704175}
   m_Layer: 0
-  m_Name: Waypoint 50
+  m_Name: Waypoint 49
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -5565,7 +5561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 50
+  Index: 49
 --- !u!4 &1742704174
 Transform:
   m_ObjectHideFlags: 0
@@ -5600,7 +5596,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1744533453
 GameObject:
@@ -5614,7 +5610,7 @@ GameObject:
   - component: {fileID: 1744533454}
   - component: {fileID: 1744533456}
   m_Layer: 0
-  m_Name: Waypoint 34
+  m_Name: Waypoint 33
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -5632,7 +5628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 34
+  Index: 33
 --- !u!4 &1744533455
 Transform:
   m_ObjectHideFlags: 0
@@ -5667,7 +5663,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1826515490
 GameObject:
@@ -5734,7 +5730,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1832864091
 GameObject:
@@ -5748,7 +5744,7 @@ GameObject:
   - component: {fileID: 1832864092}
   - component: {fileID: 1832864094}
   m_Layer: 0
-  m_Name: Waypoint 49
+  m_Name: Waypoint 48
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -5766,7 +5762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 49
+  Index: 48
 --- !u!4 &1832864093
 Transform:
   m_ObjectHideFlags: 0
@@ -5801,7 +5797,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &1929225313
 BoxCollider:
@@ -5822,7 +5818,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &1967165476
 BoxCollider:
@@ -5843,7 +5839,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &2006517366
 BoxCollider:
@@ -5864,7 +5860,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2016612993
 GameObject:
@@ -5878,7 +5874,7 @@ GameObject:
   - component: {fileID: 2016612994}
   - component: {fileID: 2016612996}
   m_Layer: 0
-  m_Name: Waypoint 27
+  m_Name: Waypoint 26
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -5896,7 +5892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 27
+  Index: 26
 --- !u!4 &2016612995
 Transform:
   m_ObjectHideFlags: 0
@@ -5931,74 +5927,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &2019762320
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2019762322}
-  - component: {fileID: 2019762321}
-  - component: {fileID: 2019762323}
-  m_Layer: 0
-  m_Name: Waypoint 26
-  m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2019762321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019762320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Index: 26
---- !u!4 &2019762322
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019762320}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -25.13821, y: 7.141, z: -298.1361}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 993708627}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2019762323
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019762320}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2043621497 stripped
 GameObject:
@@ -6024,7 +5953,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2050567584
 GameObject:
@@ -6091,7 +6020,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &2051763307
 BoxCollider:
@@ -6112,7 +6041,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2067264692
 GameObject:
@@ -6585,7 +6514,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &2081281561
 BoxCollider:
@@ -6606,7 +6535,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2132668344
 GameObject:
@@ -6761,7 +6690,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 20, z: 40}
+  m_Size: {x: 10, y: 20, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

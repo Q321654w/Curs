@@ -29,8 +29,9 @@ namespace V2.Sources
         private bool _raceStarted;
         private GameObject _playerGameObject;
         private readonly List<GameObject> _finishedCars = new();
-        private readonly Dictionary<GameObject, int> _carLapCounts = new();
-        private readonly Dictionary<GameObject, int> _carCheckpointIndex = new();
+        private readonly List<ICarController> _cars = new();
+        private readonly Dictionary<int, int> _carLapCounts = new();
+        private readonly Dictionary<int, int> _carCheckpointIndex = new();
 
         private void Start()
         {
@@ -52,8 +53,11 @@ namespace V2.Sources
 
         private void OnReached(GameObject obj, int index)
         {
-            if(_carCheckpointIndex.TryGetValue(obj, out var currentIndex) && index - currentIndex == 1)
-                _carCheckpointIndex[obj] = index;
+            if(!_carCheckpointIndex.TryGetValue(obj.GetInstanceID(), out var currentIndex))
+                return;
+            
+            if(index - currentIndex == 1)
+                _carCheckpointIndex[obj.GetInstanceID()] = index;
         }
 
         private void Update()
@@ -68,14 +72,14 @@ namespace V2.Sources
         {
             var car = other.transform.gameObject;
             if (car != null 
-                && _carLapCounts.Any(x => x.Key.GetInstanceID() == car.GetInstanceID()) 
-                && _carCheckpointIndex[car] == _waypoints.Count - 1)
+                && _carLapCounts.Any(x => x.Key == car.GetInstanceID()) 
+                && _carCheckpointIndex[car.GetInstanceID()] == _waypoints.Count - 1)
             {
-                _carCheckpointIndex[car] = 0;
-                _carLapCounts[car]++;
-                Debug.Log($"{car.GetInstanceID()} is on the lap {_carLapCounts[car]}");
+                _carCheckpointIndex[car.GetInstanceID()] = -1;
+                _carLapCounts[car.GetInstanceID()]++;
+                Debug.Log($"{car.GetInstanceID()} is on the lap {_carLapCounts[car.GetInstanceID()]}");
 
-                if (_carLapCounts[car] >= _targetLaps)
+                if (_carLapCounts[car.GetInstanceID()] >= _targetLaps)
                 {
                     car.GetComponent<ICarController>().Deactivate();
                     _finishedCars.Add(car);
@@ -97,8 +101,8 @@ namespace V2.Sources
             _countDownText.text = "Go!";
             _countDownText.color = _greenColor;
             
-            foreach (var car in _carLapCounts.Keys)
-                car.GetComponent<ICarController>().Activate();
+            foreach (var car in _cars)
+                car.Activate();
             
 
             _raceStarted = true;
@@ -123,14 +127,15 @@ namespace V2.Sources
 
                 carObject.GetComponent<ICarController>().SetUpWayPoints(_waypoints);
                 
-                _carLapCounts.Add(carObject, 0);
-                _carCheckpointIndex.Add(carObject, -1);
+                _carLapCounts.Add(carObject.GetInstanceID(), 0);
+                _carCheckpointIndex.Add(carObject.GetInstanceID(), -1);
+                _cars.Add(carObject.GetComponent<ICarController>());
             }
         }
         
         private void UpdatePlayerLapUI()
         {
-            if (_carLapCounts.TryGetValue(_playerGameObject, out var playerLaps))
+            if (_carLapCounts.TryGetValue(_playerGameObject.GetInstanceID(), out var playerLaps))
             {
                 _playerLapText.text = $"Lap: {playerLaps}/{_targetLaps}";
             }
@@ -138,7 +143,7 @@ namespace V2.Sources
         
         private void CheckRaceCompletion()
         {
-            if (_carLapCounts[_playerGameObject] >= _targetLaps)
+            if (_carLapCounts[_playerGameObject.GetInstanceID()] >= _targetLaps)
             {
                 Debug.Log("Race finished!");
                 Time.timeScale = 0f;
