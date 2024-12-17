@@ -1506,10 +1506,10 @@ MonoBehaviour:
   _frontRightTransform: {fileID: 6470229738836204604}
   _rearLeftTransform: {fileID: 3857330776953216460}
   _rearRightTransform: {fileID: 3754025270070128487}
-  _maxMotorTorque: 300
-  _maxSpeed: 300
+  _maxMotorTorque: 200
+  _maxSpeed: 60
   _maxMotorTorqueSteerCoefficient: 0.01
-  _inputSteeringAngle: 20
+  _inputSteeringAngle: 30
   _brakeTorque: 1000
   _engineAudioSource: {fileID: 8489460251671016451}
   _rigidbody: {fileID: 3715957011847778131}

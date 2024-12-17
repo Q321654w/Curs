@@ -845,10 +845,10 @@ MonoBehaviour:
   _frontRightTransform: {fileID: 5150839436445558039}
   _rearLeftTransform: {fileID: 8023511607132189826}
   _rearRightTransform: {fileID: 6472801933446770664}
-  _maxMotorTorque: 300
+  _maxMotorTorque: 250
   _inputSteeringAngle: 60
-  _waypointThreshold: 9
-  _maxCarSpeed: 49.1
+  _waypointThreshold: 25
+  _maxCarSpeed: 60
   _accelerationMagnitude: 30
   _engineAudioSource: {fileID: 0}
 --- !u!33 &944359390980350293
