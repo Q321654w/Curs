@@ -13,6 +13,8 @@ namespace V2
 
             Vehicle.ApplyControls(motorInput, steerInput);
             Vehicle.UpdateWheels();
+            if (Input.GetKeyDown(KeyCode.F))
+                Vehicle.ToggleLights();
         }
     }
 }

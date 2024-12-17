@@ -153,6 +153,9 @@ MonoBehaviour:
   Motor:
     MaxTorque: 500
     MaxSteerAngle: 20
+  Headlights:
+  - {fileID: 1018020146372491787}
+  - {fileID: 7421156004101521571}
   Rigidbody: {fileID: 7699329860681399049}
 --- !u!1 &719404655507926017
 GameObject:
@@ -200,7 +203,7 @@ WheelCollider:
     spring: 35000
     damper: 4500
     targetPosition: 0.5
-  m_SuspensionDistance: 1
+  m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
   m_Mass: 20
   m_WheelDampingRate: 0.25
@@ -403,7 +406,7 @@ WheelCollider:
     spring: 35000
     damper: 4500
     targetPosition: 0.5
-  m_SuspensionDistance: 1
+  m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
   m_Mass: 20
   m_WheelDampingRate: 0.25
@@ -670,7 +673,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5493079843052354039}
-  - component: {fileID: 6780227714992065312}
+  - component: {fileID: 1018020146372491787}
   - component: {fileID: 1605963619037898136}
   - component: {fileID: 421819546009977972}
   m_Layer: 0
@@ -695,7 +698,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4220990544463574376}
   m_LocalEulerAnglesHint: {x: 8, y: 0, z: 0}
---- !u!114 &6780227714992065312
+--- !u!114 &1018020146372491787
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -704,10 +707,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3828794858817419171}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4a9d15da18097f4485ee0f3b3b80fb5, type: 3}
+  m_Script: {fileID: 11500000, guid: d9ef851701a44a47a288bb6e2018c5f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  headlight: {fileID: 1605963619037898136}
+  Light: {fileID: 1605963619037898136}
 --- !u!108 &1605963619037898136
 Light:
   m_ObjectHideFlags: 0
@@ -1023,7 +1026,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6172986228552346337}
-  - component: {fileID: 5302798828611211209}
+  - component: {fileID: 7421156004101521571}
   - component: {fileID: 7908603109387715931}
   - component: {fileID: 3451183843218495385}
   m_Layer: 0
@@ -1048,7 +1051,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4220990544463574376}
   m_LocalEulerAnglesHint: {x: 8, y: 0, z: 0}
---- !u!114 &5302798828611211209
+--- !u!114 &7421156004101521571
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1057,10 +1060,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4437458827607306180}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4a9d15da18097f4485ee0f3b3b80fb5, type: 3}
+  m_Script: {fileID: 11500000, guid: d9ef851701a44a47a288bb6e2018c5f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  headlight: {fileID: 7908603109387715931}
+  Light: {fileID: 7908603109387715931}
 --- !u!108 &7908603109387715931
 Light:
   m_ObjectHideFlags: 0
@@ -1967,7 +1970,7 @@ WheelCollider:
     spring: 35000
     damper: 4500
     targetPosition: 0.5
-  m_SuspensionDistance: 1
+  m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
   m_Mass: 20
   m_WheelDampingRate: 0.25
@@ -2368,7 +2371,7 @@ WheelCollider:
     spring: 35000
     damper: 4500
     targetPosition: 0.5
-  m_SuspensionDistance: 1
+  m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
   m_Mass: 20
   m_WheelDampingRate: 0.25
