@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7534619220184394331}
   - component: {fileID: 4967207756363287258}
   m_Layer: 0
-  m_Name: Checkpoint 1 4
+  m_Name: 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrackManager: {fileID: 149818352592612427}
+  Index: 5
 --- !u!1 &806825202138244027
 GameObject:
   m_ObjectHideFlags: 0
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 3687482222532395884}
   - component: {fileID: 5579803205012326110}
   m_Layer: 0
-  m_Name: Checkpoint 4 (5)
+  m_Name: 17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrackManager: {fileID: 149818352592612427}
+  Index: 17
 --- !u!1 &1125548119013369812
 GameObject:
   m_ObjectHideFlags: 0
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 7823836038164032876}
   - component: {fileID: 7083468133518002982}
   m_Layer: 0
-  m_Name: Checkpoint 4
+  m_Name: 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrackManager: {fileID: 149818352592612427}
+  Index: 12
 --- !u!1 &1437052228967901685
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 5395066345357619755}
   - component: {fileID: 2748982381595808473}
   m_Layer: 0
-  m_Name: Checkpoint 1 10
+  m_Name: 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrackManager: {fileID: 149818352592612427}
+  Index: 10
 --- !u!1 &2082801659507026319
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 8479405323543019873}
   - component: {fileID: 7555261645983755317}
   m_Layer: 0
-  m_Name: Checkpoint 1 9
+  m_Name: 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrackManager: {fileID: 149818352592612427}
+  Index: 9
 --- !u!1 &2118694463995023126
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,7 +236,7 @@ GameObject:
   - component: {fileID: 8105344915677126183}
   - component: {fileID: 7304151809720964829}
   m_Layer: 0
-  m_Name: Checkpoint 1 8
+  m_Name: 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrackManager: {fileID: 149818352592612427}
+  Index: 8
 --- !u!1 &2632582892900136179
 GameObject:
   m_ObjectHideFlags: 0
@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 3763852927699878331}
   - component: {fileID: 2645521844597215952}
   m_Layer: 0
-  m_Name: Checkpoint 4 (4)
+  m_Name: 16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -314,7 +314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrackManager: {fileID: 149818352592612427}
+  Index: 16
 --- !u!1 &2776803936810973191
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,7 +326,7 @@ GameObject:
   - component: {fileID: 7349951298586855646}
   - component: {fileID: 4887918210605253066}
   m_Layer: 0
-  m_Name: Checkpoint 4 (1)
+  m_Name: 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -359,7 +359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrackManager: {fileID: 149818352592612427}
+  Index: 13
 --- !u!1 &3571587006545391075
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 8435753208088772571}
   - component: {fileID: 1423783216723155492}
   m_Layer: 0
-  m_Name: Checkpoint 4 (9)
+  m_Name: 20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -404,7 +404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrackManager: {fileID: 149818352592612427}
+  Index: 20
 --- !u!1 &3761299794399457828
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,32 +471,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6ebd4fc2e6c44d0ab0d75cb09fb6887, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Checkpoints:
-  - {fileID: 5404765165699090391}
-  - {fileID: 8917267745142578864}
-  - {fileID: 1637111251882989099}
-  - {fileID: 5578265599541600105}
-  - {fileID: 6695435002191864173}
-  - {fileID: 7534619220184394331}
-  - {fileID: 2496588534743558943}
-  - {fileID: 3107801654827422532}
-  - {fileID: 0}
-  - {fileID: 8105344915677126183}
-  - {fileID: 8479405323543019873}
-  - {fileID: 5395066345357619755}
-  - {fileID: 8139855510030860840}
-  - {fileID: 7823836038164032876}
-  - {fileID: 7349951298586855646}
-  - {fileID: 4439834483315927000}
-  - {fileID: 4086208058306534647}
-  - {fileID: 3763852927699878331}
-  - {fileID: 3687482222532395884}
-  - {fileID: 9172571593515110917}
-  - {fileID: 8043512058471051709}
-  - {fileID: 8435753208088772571}
-  - {fileID: 0}
-  - {fileID: 1701126767202321063}
-  - {fileID: 0}
+  Waypoints:
+  - {fileID: 68957173012999328}
+  - {fileID: 6847349691861960561}
+  - {fileID: 6750217885536958265}
+  - {fileID: 7133466501060052149}
+  - {fileID: 4970471864872463391}
+  - {fileID: 4967207756363287258}
+  - {fileID: 645169785429882310}
+  - {fileID: 8382192470983673097}
+  - {fileID: 7304151809720964829}
+  - {fileID: 7555261645983755317}
+  - {fileID: 2748982381595808473}
+  - {fileID: 3799740869200289573}
+  - {fileID: 7083468133518002982}
+  - {fileID: 4887918210605253066}
+  - {fileID: 749419079869811889}
+  - {fileID: 5197763858380945280}
+  - {fileID: 2645521844597215952}
+  - {fileID: 5579803205012326110}
+  - {fileID: 1420092629980726091}
+  - {fileID: 6550153954943150079}
+  - {fileID: 1423783216723155492}
+  - {fileID: 7238659335026307531}
+  _name: 
+  _adjustment: {x: 0, y: 0, z: 0}
 --- !u!1 &3847205953126164349
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,7 +507,7 @@ GameObject:
   - component: {fileID: 8043512058471051709}
   - component: {fileID: 6550153954943150079}
   m_Layer: 0
-  m_Name: Checkpoint 4 (7)
+  m_Name: 19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -541,7 +540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrackManager: {fileID: 149818352592612427}
+  Index: 19
 --- !u!1 &4052994775038532478
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,7 +552,7 @@ GameObject:
   - component: {fileID: 1701126767202321063}
   - component: {fileID: 7238659335026307531}
   m_Layer: 0
-  m_Name: Checkpoint 4 (11)
+  m_Name: 21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -586,7 +585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrackManager: {fileID: 149818352592612427}
+  Index: 21
 --- !u!1 &4416849780701064696
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,7 +597,7 @@ GameObject:
   - component: {fileID: 8917267745142578864}
   - component: {fileID: 6847349691861960561}
   m_Layer: 0
-  m_Name: Checkpoint 1
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -631,7 +630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrackManager: {fileID: 149818352592612427}
+  Index: 1
 --- !u!1 &4612862386285464899
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,7 +642,7 @@ GameObject:
   - component: {fileID: 5578265599541600105}
   - component: {fileID: 7133466501060052149}
   m_Layer: 0
-  m_Name: Checkpoint 1 2
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -676,7 +675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrackManager: {fileID: 149818352592612427}
+  Index: 3
 --- !u!1 &7279744396275360121
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,7 +687,7 @@ GameObject:
   - component: {fileID: 5404765165699090391}
   - component: {fileID: 68957173012999328}
   m_Layer: 0
-  m_Name: Checkpoint Start
+  m_Name: 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -721,7 +720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrackManager: {fileID: 149818352592612427}
+  Index: 0
 --- !u!1 &7432908833877990364
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,7 +732,7 @@ GameObject:
   - component: {fileID: 3107801654827422532}
   - component: {fileID: 8382192470983673097}
   m_Layer: 0
-  m_Name: Checkpoint 1 6
+  m_Name: 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -766,7 +765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrackManager: {fileID: 149818352592612427}
+  Index: 7
 --- !u!1 &7788522973294937932
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,7 +777,7 @@ GameObject:
   - component: {fileID: 1637111251882989099}
   - component: {fileID: 6750217885536958265}
   m_Layer: 0
-  m_Name: Checkpoint 1 1
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -811,7 +810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrackManager: {fileID: 149818352592612427}
+  Index: 2
 --- !u!1 &7885412369662188311
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,7 +822,7 @@ GameObject:
   - component: {fileID: 4086208058306534647}
   - component: {fileID: 5197763858380945280}
   m_Layer: 0
-  m_Name: Checkpoint 4 (3)
+  m_Name: 15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -856,7 +855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrackManager: {fileID: 149818352592612427}
+  Index: 15
 --- !u!1 &7955049941930444660
 GameObject:
   m_ObjectHideFlags: 0
@@ -868,7 +867,7 @@ GameObject:
   - component: {fileID: 6695435002191864173}
   - component: {fileID: 4970471864872463391}
   m_Layer: 0
-  m_Name: Checkpoint 1 3
+  m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -901,7 +900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrackManager: {fileID: 149818352592612427}
+  Index: 4
 --- !u!1 &8660416000838701565
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,7 +912,7 @@ GameObject:
   - component: {fileID: 9172571593515110917}
   - component: {fileID: 1420092629980726091}
   m_Layer: 0
-  m_Name: Checkpoint 4 (6)
+  m_Name: 18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -946,7 +945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrackManager: {fileID: 149818352592612427}
+  Index: 18
 --- !u!1 &8728348413365569262
 GameObject:
   m_ObjectHideFlags: 0
@@ -958,7 +957,7 @@ GameObject:
   - component: {fileID: 2496588534743558943}
   - component: {fileID: 645169785429882310}
   m_Layer: 0
-  m_Name: Checkpoint 1 5
+  m_Name: 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -991,7 +990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrackManager: {fileID: 149818352592612427}
+  Index: 6
 --- !u!1 &9079381219570659387
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,7 +1002,7 @@ GameObject:
   - component: {fileID: 4439834483315927000}
   - component: {fileID: 749419079869811889}
   m_Layer: 0
-  m_Name: Checkpoint 4 (2)
+  m_Name: 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1036,7 +1035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrackManager: {fileID: 149818352592612427}
+  Index: 14
 --- !u!1 &9204704712660844060
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,7 +1047,7 @@ GameObject:
   - component: {fileID: 8139855510030860840}
   - component: {fileID: 3799740869200289573}
   m_Layer: 0
-  m_Name: Checkpoint 1 11
+  m_Name: 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1081,4 +1080,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170c819860bf4466a319021fa8923c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrackManager: {fileID: 149818352592612427}
+  Index: 11

@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using PathCreation;
 using UnityEngine;
 
 namespace V2.Sources
@@ -11,30 +10,30 @@ namespace V2.Sources
         [SerializeField] private Headlight[] _backlights;
         
         [Header("Wheel Colliders")] 
-        [SerializeField]
-        private WheelCollider _frontLeftWheel;
+        [SerializeField] private WheelCollider _frontLeftWheel;
 
         [SerializeField] private WheelCollider _frontRightWheel;
         [SerializeField] private WheelCollider _rearLeftWheel;
         [SerializeField] private WheelCollider _rearRightWheel;
 
-        [Header("Wheel Transforms")] [SerializeField]
-        private Transform _frontLeftTransform;
+        [Header("Wheel Transforms")] 
+        [SerializeField] private Transform _frontLeftTransform;
 
         [SerializeField] private Transform _frontRightTransform;
         [SerializeField] private Transform _rearLeftTransform;
         [SerializeField] private Transform _rearRightTransform;
 
         [Header("Car Settings")] 
-        [SerializeField]
-        private float _inputMotorTorque = 1500f;
-
         [SerializeField] private float _maxMotorTorque = 15000f;
+        [SerializeField] private float _maxSpeed = 300f;
+        [SerializeField] private float _maxMotorTorqueSteerCoefficient = 0.5f;
         [SerializeField] private float _inputSteeringAngle = 30f;
         [SerializeField] private float _brakeTorque = 3000f;
 
-        [Header("Audio Settings")] [SerializeField]
-        private AudioSource _engineAudioSource;
+        [Header("Audio Settings")] 
+        [SerializeField] private AudioSource _engineAudioSource;
+
+        [SerializeField] private Rigidbody _rigidbody;
 
         private bool _canDrive;
         private bool _isBraking;
@@ -88,13 +87,16 @@ namespace V2.Sources
             _canDrive = false;
         }
 
-        public void SetUpWayPoints(List<Checkpoint> wayPoints)
+        public void SetUpWayPoints(List<Waypoint> wayPoints)
         {
         }
 
         private void HandleMotor()
         {
-            var motor = _motorInput * _inputMotorTorque;
+            if(_isBraking)
+                return;
+            
+            var motor = _motorInput * _maxMotorTorque;
 
             _rearLeftWheel.motorTorque = motor;
             _rearRightWheel.motorTorque = motor;
@@ -102,7 +104,8 @@ namespace V2.Sources
 
         private void HandleSteering()
         {
-            var targetSteeringAngle = _steeringInput * _inputSteeringAngle;
+            var t = GetCarSpeed() / _maxSpeed;
+            var targetSteeringAngle = _steeringInput * _inputSteeringAngle * Mathf.Lerp(1f, _maxMotorTorqueSteerCoefficient, t);
             var currentSteeringAngle =
                 Mathf.Lerp(_frontLeftWheel.steerAngle, targetSteeringAngle, Time.fixedDeltaTime * 2f);
 
@@ -148,8 +151,13 @@ namespace V2.Sources
         {
             if (!_engineAudioSource) return;
 
-            var speed = Mathf.Abs(1 * _inputMotorTorque);
-            _engineAudioSource.pitch = 1 + (speed / _inputMotorTorque);
+            var speed = Mathf.Abs(1 * _maxMotorTorque);
+            _engineAudioSource.pitch = 1 + (speed / _maxMotorTorque);
+        }
+        
+        private float GetCarSpeed()
+        {
+            return _rigidbody.velocity.magnitude;
         }
     }
 }

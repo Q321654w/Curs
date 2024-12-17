@@ -5,15 +5,15 @@ using V2.Sources;
 
 namespace V2
 {
-    public class Checkpoint : MonoBehaviour
+    public class Waypoint : MonoBehaviour
     {
-        [SerializeField] private int _index;
+        public int Index;
         public event Action<GameObject, int> Reached;
 
         private void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.TryGetComponent<ICarController>(out _))
-                Reached?.Invoke(other.gameObject, _index);
+                Reached?.Invoke(other.gameObject, Index);
         }
     }
 }

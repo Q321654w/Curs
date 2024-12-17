@@ -1,7 +1,6 @@
 ﻿using Features.Cars;
 using Features.Maps;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Features
 {

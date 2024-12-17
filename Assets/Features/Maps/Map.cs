@@ -1,5 +1,4 @@
-﻿using Features.Cars;
-using PathCreation;
+﻿using PathCreation;
 using UnityEngine;
 
 namespace Features.Maps

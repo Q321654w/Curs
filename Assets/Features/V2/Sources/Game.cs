@@ -18,7 +18,7 @@ namespace V2.Sources
         [SerializeField] private Speedometr _speedometer;
         [SerializeField] private GameObject[] _carPrefabs;
         [SerializeField] private Transform[] _spawnPoints;
-        [SerializeField] private List<Checkpoint> _waypoints;
+        [SerializeField] private List<Waypoint> _waypoints;
         
         [Header("Colors")]
         [SerializeField] private Color _redColor;
@@ -44,7 +44,7 @@ namespace V2.Sources
             
             SpawnCars();
 
-            _speedometer.target = _playerGameObject.GetComponentInChildren<Rigidbody>(); 
+            _speedometer.target = _playerGameObject.GetComponent<Rigidbody>(); 
 
             StartCoroutine(StartRaceCountdown());
             StartCoroutine(TurnOffCountdown());
@@ -52,7 +52,7 @@ namespace V2.Sources
 
         private void OnReached(GameObject obj, int index)
         {
-            if(_carCheckpointIndex.TryGetValue(obj, out var currentIndex) && currentIndex - index == 1)
+            if(_carCheckpointIndex.TryGetValue(obj, out var currentIndex) && index - currentIndex == 1)
                 _carCheckpointIndex[obj] = index;
         }
 
@@ -66,7 +66,7 @@ namespace V2.Sources
         
         private void OnTriggerEnter(Collider other)
         {
-            var car = other.transform.parent.gameObject;
+            var car = other.transform.gameObject;
             if (car != null 
                 && _carLapCounts.Any(x => x.Key.GetInstanceID() == car.GetInstanceID()) 
                 && _carCheckpointIndex[car] == _waypoints.Count - 1)
@@ -124,7 +124,7 @@ namespace V2.Sources
                 carObject.GetComponent<ICarController>().SetUpWayPoints(_waypoints);
                 
                 _carLapCounts.Add(carObject, 0);
-                _carCheckpointIndex.Add(carObject, 0);
+                _carCheckpointIndex.Add(carObject, -1);
             }
         }
         

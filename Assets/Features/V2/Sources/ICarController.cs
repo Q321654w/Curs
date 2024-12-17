@@ -1,6 +1,4 @@
 using System.Collections.Generic;
-using PathCreation;
-using UnityEngine;
 
 namespace V2.Sources
 {
@@ -8,6 +6,6 @@ namespace V2.Sources
     {
         public void Activate();
         public void Deactivate();
-        public void SetUpWayPoints(List<Checkpoint> wayPoints);
+        public void SetUpWayPoints(List<Waypoint> wayPoints);
     }
 }
